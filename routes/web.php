@@ -6,7 +6,7 @@ use App\Models\Post;
 use App\Models\PracPost;
 use Illuminate\Validation\ValidationException;
 use App\Http\Controllers\PostController;
-use App\Http\Controllers\MailchimpNewsletterController;
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PostCommentsController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionController;
@@ -22,7 +22,7 @@ use App\Http\Controllers\SessionController;
 |
 */
 
-Route::post('/newsletter', MailchimpNewsletterController::class);
+Route::post('/newsletter', NewsletterController::class);
 
 
 

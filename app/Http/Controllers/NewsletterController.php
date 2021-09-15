@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Services\MailchimpNewsletter;
 use App\Services\Newsletter;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 
 
-class MailchimpNewsletterController extends Controller
+class NewsletterController extends Controller
 {
     //
     /**
