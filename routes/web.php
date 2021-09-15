@@ -35,6 +35,8 @@ Route::get('/posts', [PostController::class, 'index'])->name('home');
 Route::get('/posts/{post:slug}', [PostController::class, 'show'])
     ->where('post', '[1-9A-z_\-]+');
 
+Route::get('/admin/posts/create', [PostController::class,'create'])->middleware('admin');
+
 Route::post('/posts/{post:slug}/comments', [PostCommentsController::class, 'store']);
 
 Route::get('/register', [RegisterController::class, 'create'])->middleware('guest');
